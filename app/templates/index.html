@@ -1,13 +1,14 @@
-<!-- Comentários -->
+<!--  Comentario   -->
 <html>
     <head>
         <title>{{ title }} - Microblog</title>
     </head>
     <body>
-        <h1>Olá, {{ user.username }}!</h1>
+        <h1>Hello, {{ user.username }}!</h1>
         <div>
             {% for post in posts %}
-                <p></p>{{ post.auth.username }}</p>
-            </div>
+                <p>{{ post.author.username }} says: <b>{{ post.body }}</b></p>
+            {% endfor %}
+        </div>
     </body>
 </html>
