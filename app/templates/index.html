@@ -5,6 +5,9 @@
     </head>
     <body>
         <h1>Olá, {{ user.username }}!</h1>
-        <div> {{posts}} </div>
+        <div>
+            {% for post in posts %}
+                <p></p>{{ post.auth.username }}</p>
+            </div>
     </body>
 </html>
